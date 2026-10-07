@@ -1,13 +1,13 @@
-console.log("\nCONSTANT - KEYWORD: Redeclaration/ reassignmrnt not allowed");
+console.log("\nCONSTANT - KEYWORD: Redeclaration/ reassignment not allowed");
 const browserVersion = "chrome"
 function getBrowserVersion()
-{
+{     
     console.log("Inside function:", browserVersion);
     if(browserVersion=="chrome"){
         console.log("Inside block:",browserVersion);
        //let browserVersion = "edge" // if you aadd this line, it throws Reference error
         console.log("Changed value:",browserVersion);
-       }
+       }     
 }
 console.log("Before calling function:", browserVersion);
 getBrowserVersion()
@@ -19,7 +19,7 @@ function lgetBrowserVersion()
 {
   console.log("Inside function:", lbrowserVersion);
     if(lbrowserVersion=="chrome"){
-      //console.log("Inside block:",lbrowserVersion); //throws error since same variablle reassigned inside block
+      //console.log("Inside block:",lbrowserVersion); //throws error since same variable reassigned inside block
         let lbrowserVersion = "edge" 
         console.log("Changed value:",lbrowserVersion);
        }  
